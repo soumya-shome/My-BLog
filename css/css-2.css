@@ -1,0 +1,208 @@
+html, body {
+  background-color: #111;
+  color: #fff;
+}
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+h1 {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+section {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+}  
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+}
+
+
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+ 
+  
+.project-tile {
+  position: relative;
+}
+
+.project-tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 1rem;
+}
+ 
+
+
+  
+
+  
+
+
+  
+
+    
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+header nav li {
+  margin: 0 20px;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.dark-theme {
+  background-color: #111;
+  color: #fff;
+}
+
+
+
+.education-container {
+  margin-top: 10px;
+}
+
+.education {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.education-section {
+  padding: 20px;
+}
+
+
+
+
+
+.social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 50px;
+}
+.social-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.social-section li {
+  margin: 0 10px;
+}
+.social-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
