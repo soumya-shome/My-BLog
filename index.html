@@ -1,48 +1,158 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Home</title>
-	
-<link rel="stylesheet" href="css/css-1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/css-2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-	<div align="center">
-		<img src="Images/profile.jpg" width="250px" alt="Soumyadeep">
-		<p>Hi! I'm Soumyadeep Shome. Say Hello !!!</p>
-		<input type="email" placeholder="Your Email"><input	 type="submit">
-	</div>
-	
-	<div align="center">
-		<p><span>My Profiles</span><br>
-		<a href="https://www.facebook.com/techie499" target="new"><img class="ic" src="Images/FB.png" alt="Facebook"></a>&nbsp;&nbsp;
-		<a href="https://www.youtube.com/c/Techie499yt" target="new"><img class="ic" src="Images/YT.png" alt="Youtube"></a>&nbsp;&nbsp;
-		<a href="https://www.linkedin.com/in/soumya-shome/" target="new"><img class="ic" src="Images/LI.png" alt="LinkedIn"></a>&nbsp;&nbsp;
-		<a href="https://www.instagram.com/techie499/" target="new"><img class="ic" src="Images/IG.png" alt="Instagram"></a>&nbsp;&nbsp;<br><br>
-		<a href="https://github.com/soumya-shome" target="new"><img class="ic" src="Images/GH.png" alt="GitHub"></a>&nbsp;&nbsp;
-		<a href="https://www.hackerrank.com/soumya_shome" target="new"><img class="ic" src="Images/HR.png" alt="HackerRank"></a>&nbsp;&nbsp;
-		<a href="https://www.hackerearth.com/@soumya_shome" target="new"><img class="ic" src="Images/HE.png" alt="Hackerearth"></a>&nbsp;&nbsp;
-		<a href="https://www.freecodecamp.org/soumya-shome" target="new"><img class="ic" src="Images/FCC.png" alt="FreeCodeCamp"></a>&nbsp;&nbsp;
-		</p>
-	</div>
-	
-	<div align="center">
-		<p><span>Languages Known</span><br>
-		<text class="e">Java</text> <text class="o">C</text> <text class="e">C++</text> <text class="o">Python</text> <text class="e">HTML</text> <text class="o">Php</text> <text class="e">JavaScript</text> 
-		</p>
-	</div>
-	
-	<div align="center">
-		<p>My Project Works<br>
-			<a href="https://youtu.be/FiENV-MJ1Zw" class="o" target="new">IoT Mini Clock</a>
-			<a href="https://t99testsite101.000webhostapp.com/" class="e" target="new">Online Exam Center</a>
-			<a href="https://sourceforge.net/projects/shometech/" class="o" target="new">ShomeTech</a>
-			<a href="" class="e" target="new">RFID Door Lock</a>
-			<a href="" class="o" target="new">Robo Arm</a>
-			<a href="" class="e" target="new">Laser Turret</a><br>
-			<a href="" class="o" target="new">Smart Door Lock</a> 
-		</p>
-	</div>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>My Portfolio</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm Soumyadeep Shome</h2>
+      <h3>A Software Developer</h3>
+    </div>
+    <div class="hero-image">  
+      <img src="Images/profile.jpg" alt="Your photo">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Welcome to my portfolio</h1>
+        <!-- <br/>
+        <p>I'm a software developer passionate about creating amazing software</p>
+       <a href="#projects" class="btn btn-primary">View my projects</a>-->
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales fringilla lorem, sit amet eleifend est ornare a. Nulla eget maximus libero, eu mollis velit. Suspendisse potenti.</p>
+          <ul class="social-icons">
+            <li><a href="https://github.com/soumya-shome"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/soumya-shome/"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="https://twitter.com/username"><i class="fab fa-twitter fa-3x"></i></a></li>
+            <li><a href="https://www.hackerrank.com/soumya_shome"><i class="fab fa-hackerrank fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com/techie499"><i class="fab fa-facebook fa-3x"></i></a></li>
+            <li><a href="https://www.instagram.com/techie499/"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="https://www.youtube.com/c/Techie499yt"><i class="fab fa-youtube fa-3x"></i></a></li>
+          </ul>
+        </div>  
+        <div class="col-md-6">
+          <h2>Skills</h2>
+          <ul class="coding-icons">
+            <li>
+              <div><i class="fab fa-java"></i><span>Java</span></div>
+            </li>
+            <li>
+              <div><i class="fab fa-python"></i><span>Python</span></div>
+            </li>
+            <li>
+              <div><i class="devicon-c-plain"></i><span>C</span></div>
+            </li>
+            <li>
+              <div><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
+            </li>
+            <li>
+              <div><i class="fab fa-php"></i><span>PHP</span></div>
+            </li>
+            <li>
+              <div><i class="fab fa-html5"></i><span>HTML</span></div>
+            </li>
+            <li>
+              <div><i class="fab fa-css3"></i><span>CSS</span></div>
+            </li>
+            <li>
+              <div><i class="fab fa-js"></i><span>JavaScript</span></div>
+            </li>
+            <li>
+              <div><i class="devicon-arduino-plain"></i><span>Arduino</span></div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="cert-btn col-md-6">
+          <a href="certificate.html" class="btn btn-primary">View my Certifications</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul class="projects-grid">
+        <li>
+          <div class="project-tile">
+            <img src="project1.jpg" alt="ShomeTech">
+            <a href="project-1.html"><h3>ShomeTech</h3></a>
+            <p>Description</p>
+          </div>
+        </li>
+        <li>
+          <div class="project-tile">
+            <img src="project2.jpg" alt="RFID Door Lock">
+            <h3>RFID Door Lock</h3>
+            <p>Description</p>
+          </div>
+        </li>
+        <li>
+          <div class="project-tile">
+            <img src="project2.jpg" alt="Online Exam Center">
+            <h3>Online Exam Center</h3>
+            <p>Description</p>
+          </div>
+        </li>
+        <li>
+          <div class="project-tile">
+            <img src="project2.jpg" alt="IoT Mini Clock">
+            <h3>IoT Mini Clock</h3>
+            <p>Description</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-form">
+      <form action="mailto:soumya.shome99@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+         <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+         <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+         <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2022 Soumyadeep Shome. All rights reserved.</p>
+  </footer>
 </body>
 </html>
