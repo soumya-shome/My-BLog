@@ -12,6 +12,24 @@
 <body>
   <header>
     <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">My Portfolio</a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--<nav class="navbar">
       <div class="navbar-brand">
         <h1 class="logo">My Portfolio</h1>
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -25,18 +43,24 @@
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
-    </nav>
+    </nav>-->
   </header>
   <script>
-    // Toggle navigation on mobile devices
-const navbarToggler = document.querySelector(".navbar-toggler");
-const navbarCollapse = document.querySelector(".navbar-collapse");
-
-navbarToggler.addEventListener("click", () => {
-  navbarToggler.classList.toggle("collapsed");
-  navbarCollapse.classList.toggle("show");
-});
-
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+     navbar.classList.add("sticky")
   </script>
 
   <section id="hero">
