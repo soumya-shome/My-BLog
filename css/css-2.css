@@ -171,7 +171,7 @@ footer a:hover {
   width: 100%;
   z-index: 1;
   padding: 25px 0;
-  transition: all 0.3s ease;
+
 }
 .navbar.sticky{
   background: #1b1b1b;
@@ -255,7 +255,6 @@ footer a:hover {
     .navbar .menu-list li a{
       font-size: 23px;
       margin-left: -100%;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     .navbar.show .menu-list li a{
       margin-left: 0px;
@@ -480,19 +479,18 @@ color: #fff;
 .contact-form textarea {
 height: 150px;
 }
-.contact-form button[type="submit"] {
-  /*background-color: #333;
-  color: #fff;*/
+.contact-form button{
+  background-color: #333;
+  color: #fff;
   padding: 10px 20px;
-  border: none;
+  border-color: #f1f1f1;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 
-  background-color: #fff;
-  color: #333;
+
 }
-.contact-form button[type="submit"]:hover {
+.contact-form button:hover {
 /*background-color: #444;*/
 background-color: #ddd;
   color: #333;
