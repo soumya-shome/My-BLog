@@ -28,9 +28,9 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" >About Me</a></li>
+          <li><a href="#projects" >Projects</a></li>
+          <li><a href="#contact" >Contact</a></li>
         </ul>
         <div class="icon menu-btn">
           <i class="fas fa-bars"></i>
@@ -44,11 +44,20 @@
     const navbar = document.querySelector(".navbar");
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
+    const menuB = document.querySelector(".menu-list");
+
     menuBtn.onclick = ()=>{
       navbar.classList.add("show");
       menuBtn.classList.add("hide");
       body.classList.add("disabled");
     }
+
+    menuB.onclick = ()=>{
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+      body.classList.remove("disabled");
+    }
+
     cancelBtn.onclick = ()=>{
       body.classList.remove("disabled");
       navbar.classList.remove("show");
@@ -57,23 +66,16 @@
      navbar.classList.add("sticky")
   </script>
 
-  <section id="hero">
+  <section id="hero" style="padding-top: 80px; margin-top: 0px;">
     <div class="hero-text">
       <h2>Hello, I'm Soumyadeep Shome</h2>
       <h3>A Software Developer</h3>
     </div>
-    <div class="hero-image">  
-      
+    <div class="hero-image">
       <img src="Images/profile.jpg" alt="Your photo">
     </div>
-    <div class="container">
-      <div class="hero-content">
+    <div class="hero-content">
         <h1>Welcome to my portfolio</h1>
-        <!-- <br/>
-        <p>I'm a software developer passionate about creating amazing software</p>
-       <a href="#projects" class="btn btn-primary">View my projects</a>-->
-      </div>
-      
     </div>
   </section>
 
@@ -132,7 +134,7 @@
       </div>
     </div>
   </section>
-
+  
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
