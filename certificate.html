@@ -3,15 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Certificates</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="css/css-2.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("Zx6YskytANj24jfjK");
+   })();
+  </script>
+  <script src="JS/index.js"></script>
+
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar sticky">
       <div class="content">
         <div class="logo">
           <a href="index.html">My Portfolio</a>
@@ -20,7 +28,9 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#about" >About Me</a></li>
+          <li><a href="#projects" >Projects</a></li>
+          <li><a href="#contact" >Contact</a></li>
         </ul>
         <div class="icon menu-btn">
           <i class="fas fa-bars"></i>
@@ -28,11 +38,12 @@
       </div>
     </nav>
   </header>
-    <section id="certifications" class="section">
+
+    <section id="certifications" class="section" style="padding-top: 80px; margin-top: 0px;">
       <div class="container">
         <h2>Certifications</h2>
         <ul class="certifications-grid">
-          <li>
+          <li> 
             <div class="certification-tile">
               <img src="Images/certificate/Certificate.png" alt="Certification 1">
               <h3>Certification 1</h3>
