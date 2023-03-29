@@ -4,20 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="css/css-2.css">
+  <link rel="stylesheet" href="css/css.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-   (function(){
-      emailjs.init("Zx6YskytANj24jfjK");
-   })();
-  </script>
   <script src="JS/index.js"></script>
-
 </head>
 
-<body>
+<body onload="onLo()">
   <header>
     <nav class="navbar sticky">
       <div class="content">
@@ -33,39 +27,12 @@
           <li><a href="#contact" >Contact</a></li>
         </ul>
         <div class="icon menu-btn">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" onclick="navb()"></i>
         </div>
       </div>
     </nav>
   </header>
  
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    const menuB = document.querySelector(".menu-list");
-
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-
-    menuB.onclick = ()=>{
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-      body.classList.remove("disabled");
-    }
-
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-     navbar.classList.add("sticky")
-  </script>
-
   <section id="hero" style="padding-top: 80px; margin-top: 0px;">
     <div class="hero-text">
       <h2>Hello, I'm Soumyadeep Shome</h2>
