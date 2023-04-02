@@ -285,7 +285,6 @@
   .project-tile:hover {
    /* transform: translateY(-0.5rem);*/
 	transform: scale(1.1);
-	height: 250px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 	z-index: 1;
   }
@@ -382,7 +381,7 @@
   
   /* Button */
   .cert-btn { 
-	padding: 40px;
+	padding: 20px;
   }
   .btn {
 	display: inline-block;
@@ -396,6 +395,7 @@
 	border: none;
 	border-radius: 5px;
 	transition: all 0.3s;
+	margin:10px 20px 10px;
   }
   .btn:hover {
 	background-color: #555;
